@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.calculadora {
+    margin: 3rem auto;
+    width: 14.5rem;
+    height: 22rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    position: relative;
+}
+
+.resultado {
+    width: 14rem;
+    height: 3.5rem;
+    color: white;
+    text-align: right;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    border: none;
+}
+
+.resultado:focus {
+    outline: none;
+}
+
+.cubito {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    border: 0.5px black solid;
+}
+
+.__verde {
+    background: linear-gradient(
+        180deg,
+        rgba(105, 246, 142, 1) 31%,
+        rgba(10, 188, 48, 1) 48%,
+        rgba(94, 237, 131, 1) 100%
+    );
+}
+
+.__rojo {
+    background: linear-gradient(
+        180deg,
+        rgba(216, 0, 1, 1) 31%,
+        rgba(133, 8, 12, 1) 48%,
+        rgba(238, 0, 0, 1) 100%
+    );
+
+    color: white;
+}
+
+.__azul {
+    background: linear-gradient(
+        180deg,
+        rgba(11, 135, 208, 1) 31%,
+        rgba(7, 86, 156, 1) 48%,
+        rgba(7, 125, 195, 1) 100%
+    );
+    color: white;
+}
+
+.__amarillo {
+    background: linear-gradient(
+        180deg,
+        rgba(254, 229, 4, 1) 31%,
+        rgba(253, 172, 44, 1) 48%,
+        rgba(254, 210, 17, 1) 100%
+    );
+}
+
+button:active {
+    background: linear-gradient(
+        180deg,
+        rgba(244, 150, 119, 1) 31%,
+        rgba(253, 96, 44, 1) 48%,
+        rgba(240, 169, 147, 1) 100%
+    );
+}
+
+.ms-check {
+    color: green;
+    font-size: 0.8rem;
+    display: none;
+    left: 1rem;
+    top: 2.5rem;
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+}
