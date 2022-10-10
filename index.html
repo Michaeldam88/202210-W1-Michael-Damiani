@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+
+        <div class="calculadora">
+            <input
+                id="resultado"
+                class="resultado"
+                type="text"
+                name="resultado"
+                value="0"
+                readonly
+            />
+            <div id="ms-check" class="ms-check">MS</div>
+            <button onClick="porcentaje()" class="cubito __azul">%</button>
+            <button onClick="memoryRecall()" class="cubito __azul">MR</button>
+            <button onClick="memorySave()" class="cubito __azul">MS</button>
+            <button onClick="cancel()" class="cubito __rojo">C</button>
+            <button onClick="addNumber('7')" class="cubito __verde">7</button>
+            <button onClick="addNumber('8')" class="cubito __verde">8</button>
+            <button onClick="addNumber('9')" class="cubito __verde">9</button>
+            <button onClick="selectOp('÷')" class="cubito __azul">÷</button>
+            <button onClick="addNumber('4')" class="cubito __verde">4</button>
+            <button onClick="addNumber('5')" class="cubito __verde">5</button>
+            <button onClick="addNumber('6')" class="cubito __verde">6</button>
+            <button onClick="selectOp('x')" class="cubito __azul">x</button>
+            <button onClick="addNumber('1')" class="cubito __verde">1</button>
+            <button onClick="addNumber('2')" class="cubito __verde">2</button>
+            <button onClick="addNumber('3')" class="cubito __verde">3</button>
+            <button onClick="selectOp('-')" class="cubito __azul">-</button>
+            <button onClick="addNumber('0')" class="cubito __verde">0</button>
+            <button onClick="coma()" class="cubito __verde">,</button>
+            <button onClick="calcular()" class="cubito __amarillo">=</button>
+            <button onClick="selectOp('+')" class="cubito __azul">+</button>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
